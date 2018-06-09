@@ -15,6 +15,7 @@ my $checker = $zs->checker;
 
 while(){
     if ($zs->size < 5){
+        usleep(10000);
         $zs->add_zundoko;
     }else{
         last if($checker->check_zundoko);
